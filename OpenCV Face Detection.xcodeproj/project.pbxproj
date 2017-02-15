@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD4C18271E5515D2006BEFAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4C18261E5515D2006BEFAD /* AppDelegate.swift */; };
+		BD4C18291E5515D2006BEFAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4C18281E5515D2006BEFAD /* ViewController.swift */; };
+		BD4C182E1E5515D2006BEFAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD4C182D1E5515D2006BEFAD /* Assets.xcassets */; };
+		BD4C18461E551679006BEFAD /* OCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = BD4C18451E551679006BEFAD /* OCVWrapper.mm */; };
+		BD4C18491E5516DE006BEFAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD4C18471E5516DE006BEFAD /* Main.storyboard */; };
+		BD4C184B1E55172C006BEFAD /* haarcascade_frontalface_default.xml in Resources */ = {isa = PBXBuildFile; fileRef = BD4C184A1E55172C006BEFAD /* haarcascade_frontalface_default.xml */; };
+		BD4C184E1E55177F006BEFAD /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4C184D1E55177F006BEFAD /* opencv2.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BD4C18231E5515D2006BEFAD /* OpenCV Face Detection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenCV Face Detection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD4C18261E5515D2006BEFAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD4C18281E5515D2006BEFAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD4C182D1E5515D2006BEFAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD4C18321E5515D2006BEFAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD4C18401E55165F006BEFAD /* OpenCV Face Detection-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenCV Face Detection-Bridging-Header.h"; sourceTree = "<group>"; };
+		BD4C18441E551679006BEFAD /* OCVWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVWrapper.h; sourceTree = "<group>"; };
+		BD4C18451E551679006BEFAD /* OCVWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCVWrapper.mm; sourceTree = "<group>"; };
+		BD4C18481E5516DE006BEFAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD4C184A1E55172C006BEFAD /* haarcascade_frontalface_default.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_default.xml; sourceTree = "<group>"; };
+		BD4C184D1E55177F006BEFAD /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD4C18201E5515D2006BEFAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD4C184E1E55177F006BEFAD /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD4C181A1E5515D2006BEFAD = {
+			isa = PBXGroup;
+			children = (
+				BD4C184C1E55172E006BEFAD /* Classifiers */,
+				BD4C183F1E551648006BEFAD /* Frameworks */,
+				BD4C18251E5515D2006BEFAD /* OpenCV Face Detection */,
+				BD4C18241E5515D2006BEFAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD4C18241E5515D2006BEFAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD4C18231E5515D2006BEFAD /* OpenCV Face Detection.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD4C18251E5515D2006BEFAD /* OpenCV Face Detection */ = {
+			isa = PBXGroup;
+			children = (
+				BD4C18431E551668006BEFAD /* Wrappers */,
+				BD4C18261E5515D2006BEFAD /* AppDelegate.swift */,
+				BD4C18281E5515D2006BEFAD /* ViewController.swift */,
+				BD4C18471E5516DE006BEFAD /* Main.storyboard */,
+				BD4C182D1E5515D2006BEFAD /* Assets.xcassets */,
+				BD4C18321E5515D2006BEFAD /* Info.plist */,
+			);
+			path = "OpenCV Face Detection";
+			sourceTree = "<group>";
+		};
+		BD4C183F1E551648006BEFAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD4C184D1E55177F006BEFAD /* opencv2.framework */,
+			);
+			name = Frameworks;
+			path = "OpenCV Face Detection";
+			sourceTree = "<group>";
+		};
+		BD4C18431E551668006BEFAD /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				BD4C18441E551679006BEFAD /* OCVWrapper.h */,
+				BD4C18451E551679006BEFAD /* OCVWrapper.mm */,
+				BD4C18401E55165F006BEFAD /* OpenCV Face Detection-Bridging-Header.h */,
+			);
+			name = Wrappers;
+			sourceTree = "<group>";
+		};
+		BD4C184C1E55172E006BEFAD /* Classifiers */ = {
+			isa = PBXGroup;
+			children = (
+				BD4C184A1E55172C006BEFAD /* haarcascade_frontalface_default.xml */,
+			);
+			name = Classifiers;
+			path = "OpenCV Face Detection";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD4C18221E5515D2006BEFAD /* OpenCV Face Detection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD4C18351E5515D2006BEFAD /* Build configuration list for PBXNativeTarget "OpenCV Face Detection" */;
+			buildPhases = (
+				BD4C181F1E5515D2006BEFAD /* Sources */,
+				BD4C18201E5515D2006BEFAD /* Frameworks */,
+				BD4C18211E5515D2006BEFAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenCV Face Detection";
+			productName = "OpenCV Face Detection";
+			productReference = BD4C18231E5515D2006BEFAD /* OpenCV Face Detection.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD4C181B1E5515D2006BEFAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Marcos Castaneda";
+				TargetAttributes = {
+					BD4C18221E5515D2006BEFAD = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BD4C181E1E5515D2006BEFAD /* Build configuration list for PBXProject "OpenCV Face Detection" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD4C181A1E5515D2006BEFAD;
+			productRefGroup = BD4C18241E5515D2006BEFAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD4C18221E5515D2006BEFAD /* OpenCV Face Detection */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD4C18211E5515D2006BEFAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD4C18491E5516DE006BEFAD /* Main.storyboard in Resources */,
+				BD4C184B1E55172C006BEFAD /* haarcascade_frontalface_default.xml in Resources */,
+				BD4C182E1E5515D2006BEFAD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD4C181F1E5515D2006BEFAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD4C18461E551679006BEFAD /* OCVWrapper.mm in Sources */,
+				BD4C18291E5515D2006BEFAD /* ViewController.swift in Sources */,
+				BD4C18271E5515D2006BEFAD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BD4C18471E5516DE006BEFAD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD4C18481E5516DE006BEFAD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD4C18331E5515D2006BEFAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD4C18341E5515D2006BEFAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD4C18361E5515D2006BEFAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenCV\\ Face\\ Detection",
+					"$(PROJECT_DIR)/OpenCV\\ Face\\ Detection",
+				);
+				INFOPLIST_FILE = "OpenCV Face Detection/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marcoscastaneda.OpenCV-Face-Detection";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenCV Face Detection/OpenCV Face Detection-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BD4C18371E5515D2006BEFAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenCV\\ Face\\ Detection",
+					"$(PROJECT_DIR)/OpenCV\\ Face\\ Detection",
+				);
+				INFOPLIST_FILE = "OpenCV Face Detection/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marcoscastaneda.OpenCV-Face-Detection";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenCV Face Detection/OpenCV Face Detection-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD4C181E1E5515D2006BEFAD /* Build configuration list for PBXProject "OpenCV Face Detection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD4C18331E5515D2006BEFAD /* Debug */,
+				BD4C18341E5515D2006BEFAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD4C18351E5515D2006BEFAD /* Build configuration list for PBXNativeTarget "OpenCV Face Detection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD4C18361E5515D2006BEFAD /* Debug */,
+				BD4C18371E5515D2006BEFAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD4C181B1E5515D2006BEFAD /* Project object */;
+}
